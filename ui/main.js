@@ -3,7 +3,7 @@ console.log('Loaded!');
 var element = document.getElementById('main-text');
 element.innerHTML = 'New value';
 //move the image
-var img = document.getElementById('madi');
+var img = document.getElementById('img');
 var marginLeft = 0;
 function moveRight (){
     marginLeft = marginLeft+'px';
