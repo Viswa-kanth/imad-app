@@ -60,7 +60,14 @@ app.get('/:articleName',function(req,res) {
     app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-var names = [];
+
+
+app.get('/:articleName',function(req,res) {
+    var articleName = req.params.articleName;
+    res.send(createTemplate(articles[articleName]));
+    });
+    
+    var names = [];
 app.get('/submit-name/:name',function(req,res){ //URL:/submit-name?name=xxxxx
     //get the name from request
 var name = req.query.name;
@@ -68,12 +75,7 @@ names.push(name);//concatenate to overall list of names
 //json:javascript object notation
 res.send(JSON.stringify(names));
 });
-
-app.get('/:articleName',function(req,res) {
-    var articleName = req.params.articleName;
-    res.send(createTemplate(articles[articleName]));
-    });
-    app.get('/ui/style.css', function (req, res) {
+ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
     app.get('/ui/main.js', function (req, res) {
