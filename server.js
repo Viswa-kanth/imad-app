@@ -67,7 +67,7 @@ app.get('/counter',function(req,res) {
     var names = [];
 app.get('/submit-name/:name',function(req,res){ //URL:/submit-name?name=xxxxx
     //get the name from request
-var name = req.query.name;
+var name = req.params.name;
 names.push(name);//concatenate to overall list of names
 //json:javascript object notation
 res.send(JSON.stringify(names));
