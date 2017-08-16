@@ -6,10 +6,10 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    'article-one' : {}
-    'article-two' : {}
+    'article-one' : {},
+    'article-two' : {},
     'article-three': {}
-    }
+    };
 function createTemplate(data){
     var title=data.title;
     var date=data.date;
