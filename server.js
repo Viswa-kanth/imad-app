@@ -87,7 +87,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 var names = [];
-app.get('/submit-name/:name',function(req,res){
+app.get('/submit-name/:name',function(req,res){ //URL:/submit-name?name=xxxxx
     //get the name from request
 var name = req.query.name;
 names.push(name);//concatenate to overall list of names
