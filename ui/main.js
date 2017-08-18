@@ -22,9 +22,7 @@ button.onclick = function (){
     };
         
     //submit name
-    var nameInput = document.getElementById('name');
-    var name = nameInput.value
-    var submit = document.getElementById('submit-btn');
+var submit = document.getElementById('submit-btn');
     submit.onclick = function () {
     var button = document.getElementById('counter');
 button.onclick = function (){
@@ -49,6 +47,8 @@ button.onclick = function (){
         };
         //not done yet
         //make a request
+          var nameInput = document.getElementById('name');
+    var name = nameInput.value
         request.open('GET','http://viswakanthreddy06.imad.hasura-app.io/submit-name'+name,true);
         request.send(null);
     };    
