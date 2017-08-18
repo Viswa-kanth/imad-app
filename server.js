@@ -95,6 +95,7 @@ names.push(name);//concatenate to overall list of names
 //json:javascript object notation
 res.send(JSON.stringify(names));
 });
+
 app.get('/:articleName',function(req,res) {
     var articleName = req.params.articleName;
     res.send(createTemplate(articles[articleName]));
