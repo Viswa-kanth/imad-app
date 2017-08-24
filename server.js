@@ -107,7 +107,7 @@ app.get('/counter',function(req,res) {
 });
 
 var names = [];
-app.get('/submit-name/:name',function(req,res){ //URL:/submit-name?name=xxxxx
+app.get('/submit-name/:name',function (req,res){ //URL:/submit-name?name=xxxxx
     //get the name from request
 var name = req.query.name;
 names.push(name);//concatenate to overall list of names
@@ -115,7 +115,7 @@ names.push(name);//concatenate to overall list of names
 res.send(JSON.stringify(names));
 });
 
-app.get('/:articleName',function(req,res) {
+app.get('/:articleName',function (req,res) {
     var articleName = req.query.articleName;
     res.send(createTemplate(articles[articleName]));
     });
