@@ -21,12 +21,12 @@ var articles = {
     `<p>
     This is content of my first article.  This is content of my first article.  This is content of my first article.
       This is content of my first article.  This is content of my first article.
-      </p>'
-      '<p>
+      </p>
+      <p>
         This is content of my first article.  This is content of my first article.  This is content of my first article.
           This is content of my first article.  This is content of my first article.
-          </p>'
-          '<p>
+          </p>
+          <p>
             This is content of my first article.  This is content of my first article.  This is content of my first article.
               This is content of my first article.  This is content of my first article.
               </p>`
