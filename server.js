@@ -17,16 +17,16 @@ var articles = {
     title : 'Article one i kanth',
     heading : 'Article one',
     date : 'sep14,2017',
-    content : `
-    <p>
+    content : 
+    `<p>
     This is content of my first article.  This is content of my first article.  This is content of my first article.
       This is content of my first article.  This is content of my first article.
-      </p>
-      <p>
+      </p>'
+      '<p>
         This is content of my first article.  This is content of my first article.  This is content of my first article.
           This is content of my first article.  This is content of my first article.
-          </p>
-          <p>
+          </p>'
+          '<p>
             This is content of my first article.  This is content of my first article.  This is content of my first article.
               This is content of my first article.  This is content of my first article.
               </p>`
@@ -35,8 +35,8 @@ var articles = {
                 title : 'Article two i kanth',
                 heading : 'Article two',
                 date : 'sep11,2017',
-                content : `
-                <p>
+                content : 
+                `<p>
                 This is content of my second article.
                 </p>`
               },
@@ -44,8 +44,8 @@ var articles = {
                 title : 'Article three i kanth',
                 heading : 'Article three',
                 date : 'sep9,2017',
-                content : `
-                <p>
+                content : 
+                `<p>
                 This is content of my third article.
                 </p>`
               }
@@ -56,7 +56,8 @@ var articles = {
     var date=data.date;
     var heading=data.heading;
     var content=data.content;
-var htmlTemplate= `
+var htmlTemplate= 
+'
 <html>
 <head>
     <title>
@@ -82,7 +83,7 @@ var htmlTemplate= `
     </div>
     </body>
     </html>
-    `;
+    ';
     return htmlTemplate;
     }
 app.get('/', function (req, res) {
