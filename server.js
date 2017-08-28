@@ -65,7 +65,7 @@ var htmlTemplate= `
     <title>
         ${title}
     </title>
-         <link href="/ui/style.css" rel="stylesheet" />
+         <link href="/ui/style.css" rel="stylesheet"/>
     </head>
     <body>
         <div class = "container">
@@ -113,7 +113,7 @@ function hash (input,salt) {
         if (err) {
             res.status(500).send(err.tostring());
             } else {
-                res.send('user succesfully created: ' + username);
+                res.send('User succesfully created: ' + username);
             }
     });
     });
