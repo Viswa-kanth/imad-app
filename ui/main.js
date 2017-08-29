@@ -1,6 +1,7 @@
 //submit username/password to login
 var submit = document.getElementById('submit-btn');
 submit.onclick = function () {
+    
     //create a new request
     var request = new XMLHttpRequest();
     //capture the response and store it ina variable
